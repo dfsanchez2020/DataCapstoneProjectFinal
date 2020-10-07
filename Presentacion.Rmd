@@ -1,0 +1,55 @@
+---
+title: "Data Science Capstone - Final Project"
+author: "Diego Fernando Sanchez - Colombia"
+date: "7/10/2020"
+Country: "Colombia"
+output: ioslides_presentation
+---
+
+## Introduction
+
+The goal of this exercise is to create a product to highlight the prediction algorithm that you have built and to provide an interface that can be accessed by others. For this project you must submit:
+
+A Shiny app that takes as input a phrase (multiple words) in a text box input and outputs a prediction of the next word. A slide deck consisting of no more than 5 slides created with R Studio Presenter (https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations) pitching your algorithm and app as if you were presenting to your boss or an investor.
+
+Review criteria: 
+* Does the link lead to a Shiny app with a text input box that is running on shinyapps.io?
+* Does the app load to the point where it can accept input?
+* When you type a phrase in the input box do you get a prediction of a single word after pressing submit and/or a suitable delay for the model to compute the answer?
+* Put five phrases drawn from Twitter or news articles in English leaving out the last word. Did it give a prediction for every one?
+
+## Algorithm
+
+Dataset: as provided, the blogs, the news and the twitter source dataset.
+
+Data processing: the used dataset is provided as pre-processed, lowercased, trimmed.
+
+N-grams: 2,3,4 grams are created to provide the prediction
+
+Prediction: using at least 2 words from a text input as a reference for the n-gram tables.
+The application will return with the most frequent next word.
+
+
+## Functioning of the App
+
+
+The first task is to load the libraries.
+
+Next we load the bigram, trigram and quadgram frequencies words matrix frequencies.
+
+Next we use the function to predict the word.
+
+Then we use the function predictWord.
+
+
+## The link for GITHUB and RPub
+
+
+Below are the link for github
+
+(https://github.com/dfsanchez2020/DataCapstoneProjectFinal.git)
+
+Below is the link for shiny app
+
+(https://dfsanchez.shinyapps.io/ProyectoFinal/)
+
